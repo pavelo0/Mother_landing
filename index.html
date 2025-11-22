@@ -7,54 +7,60 @@
     </head>
     <body>
         <header class="page-header">
-            <ul class="menu">
-                <li class="menu__item"><a href="#" class="menu__link">Page</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Products</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Specifications</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Statistics</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Contact us</a></li>
-            </ul>
+            <div class="page-header__container container">
+                <ul class="page-header__menu menu">
+                    <li class="menu__item"><a href="#" class="menu__link">Page</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Products</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Specifications</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Statistics</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Contact us</a></li>
+                </ul>
 
-            <div class="page-header__actions">
-                <button class="page-header__search">Search</button>
-                <button class="page-header__contact-us">Contact-us</button>
-            </div>
+                <div class="page-header__actions">
+                    <button class="page-header__search">Search</button>
+                    <button class="page-header__contact-us">Contact-us</button>
+                </div>
 
-            <div class="page-header__hero">
-                <h1><span>Explore the magic</span><br />of motherhood</h1>
-                <a href="#" class="page-header__explore">
-                    <img
-                        src="./assets/images/explore-icon.svg"
-                        alt="Explore icon"
-                        class="page-header__explore-icon"
-                    />
-                </a>
+                <div class="page-header__hero">
+                    <h1><span>Explore the magic</span><br />of motherhood</h1>
+                    <a href="#" class="page-header__explore">
+                        <img
+                            src="./assets/images/icons/explore-icon.svg"
+                            alt="Explore icon"
+                            class="page-header__explore-icon"
+                        />
+                    </a>
+                </div>
             </div>
         </header>
 
         <main class="page-main">
             <section class="intro">
-                <div class="intro__text-block">
-                    <h2 class="intro__header">Motherhood</h2>
-                    <p class="intro__paragraph">
-                        Welcome to our Motherhood website, a nurturing hub designed exclusively for
-                        mothers, by mothers. Step into a sanctuary of support, wisdom, and
-                        connection as we journey together through the beautiful chaos of motherhood.
-                    </p>
-                    <p class="intro__paragraph">
-                        Here, you'll find a treasure trove of resources tailored to every stage of
-                        the motherhood experience. From pregnancy to the toddler years and beyond,
-                        we're here to guide you with expert advice, heartfelt stories, and practical
-                        tips that resonate with the joys and challenges of raising little ones.
-                    </p>
-                    <a href="#" class="intro__learn-link">Learn more</a>
-                </div>
+                <div class="intro__container container">
+                    <div class="intro__text-block">
+                        <h2 class="intro__header">Motherhood</h2>
+                        <p class="intro__paragraph">
+                            Welcome to our Motherhood website, a nurturing hub designed exclusively
+                            for mothers, by mothers. Step into a sanctuary of support, wisdom, and
+                            connection as we journey together through the beautiful chaos of
+                            motherhood.
+                        </p>
+                        <p class="intro__paragraph">
+                            Here, you'll find a treasure trove of resources tailored to every stage
+                            of the motherhood experience. From pregnancy to the toddler years and
+                            beyond, we're here to guide you with expert advice, heartfelt stories,
+                            and practical tips that resonate with the joys and challenges of raising
+                            little ones.
+                        </p>
+                        <a href="#" class="intro__learn-link">Learn more</a>
+                    </div>
 
-                <img
-                    src="./assets/images/motherhood-image.png"
-                    alt="Motherhood image"
-                    class="intro__image"
-                />
+                    <img
+                        src="./assets/images/motherhood-image.png"
+                        alt="Motherhood image"
+                        class="intro__image"
+                    />
+                </div>
 
                 <img
                     src="./assets/images/motherhood-bg-image.svg"
@@ -64,96 +70,428 @@
             </section>
 
             <section class="tips-for-mom">
-                <h2 class="tips-for-mom__header">Tips for mom</h2>
+                <div class="tips-for-mom__container container">
+                    <h2 class="tips-for-mom__header">Tips for mom</h2>
 
-                <div class="category-grid category-grid--primary">
-                    <article class="category-card">
-                        <img
-                            src="./assets/images/analytics.jpg"
-                            alt="Мама с ребёнком, категория Analytics"
-                            class="category-card__photo"
-                            loading="lazy"
-                            width="300"
-                            height="200"
-                        />
-                        <h3 class="category-card__header">Analytics</h3>
-                        <p class="category-card__info">5 products</p>
-                    </article>
+                    <div class="tips-for-mom__category-grid category-grid category-grid--primary">
+                        <article class="category-grid__card category-card">
+                            <img
+                                src="./assets/images/tips-for-mom/tips-for-mom1.png"
+                                alt="Mother with child, Analytics category"
+                                class="category-card__photo"
+                                loading="lazy"
+                                width="300"
+                                height="200"
+                            />
+                            <h3 class="category-card__header">Analytics</h3>
+                            <p class="category-card__info">5 products</p>
+                        </article>
+
+                        <article class="category-grid__card category-card">
+                            <img
+                                src="./assets/images/tips-for-mom/tips-for-mom2.png"
+                                alt="Mother with child, Analytics category"
+                                class="category-card__photo"
+                                loading="lazy"
+                                width="300"
+                                height="200"
+                            />
+                            <h3 class="category-card__header">Analytics</h3>
+                            <p class="category-card__info">5 products</p>
+                        </article>
+
+                        <article class="category-grid__card category-card">
+                            <img
+                                src="./assets/images/tips-for-mom/tips-for-mom3.png"
+                                alt="Mother with child, Analytics category"
+                                class="category-card__photo"
+                                loading="lazy"
+                                width="300"
+                                height="200"
+                            />
+                            <h3 class="category-card__header">Analytics</h3>
+                            <p class="category-card__info">5 products</p>
+                        </article>
+                    </div>
+
+                    <div class="tips-for-mom__category-grid category-grid category-grid--secondary">
+                        <article class="category-grid__card category-card">
+                            <img
+                                src="./assets/images/tips-for-mom/tips-for-mom4.png"
+                                alt="Woman with children outdoors, Digital category"
+                                class="category-card__photo"
+                                loading="lazy"
+                                width="300"
+                                height="200"
+                            />
+                            <h3 class="category-card__header">Digital</h3>
+                            <p class="category-card__info">2 products</p>
+                        </article>
+
+                        <article class="category-grid__card category-card">
+                            <img
+                                src="./assets/images/tips-for-mom/tips-for-mom5.png"
+                                alt="Woman with children outdoors, Digital category"
+                                class="category-card__photo"
+                                loading="lazy"
+                                width="300"
+                                height="200"
+                            />
+                            <h3 class="category-card__header">Digital</h3>
+                            <p class="category-card__info">2 products</p>
+                        </article>
+
+                        <article class="category-grid__card category-card">
+                            <img
+                                src="./assets/images/tips-for-mom/tips-for-mom6.png"
+                                alt="Woman with children outdoors, Digital category"
+                                class="category-card__photo"
+                                loading="lazy"
+                                width="300"
+                                height="200"
+                            />
+                            <h3 class="category-card__header">Digital</h3>
+                            <p class="category-card__info">2 products</p>
+                        </article>
+                    </div>
+
+                    <button class="tips-for-mom__show-all">Show all products</button>
                 </div>
-
-                <div class="category-grid category-grid--secondary">
-                    <article class="category-card">
-                        <img
-                            src="./assets/images/digital.jpg"
-                            alt="Женщина с детьми на улице, категория Digital"
-                            class="category-card__photo"
-                            loading="lazy"
-                            width="300"
-                            height="200"
-                        />
-                        <h3 class="category-card__header">Digital</h3>
-                        <p class="category-card__info">2 products</p>
-                    </article>
-                </div>
-
-                <button class="tips-for-mom__show-all">Show all products</button>
             </section>
 
             <section class="tips">
-                <h2 class="tips__header">Tips</h2>
+                <div class="tips__container container">
+                    <h2 class="tips__header">Tips</h2>
 
-                <div class="tips__cards">
-                    <div class="tips__card">
-                        <img src="#" alt="First aid kit illustration" class="tips__card-image" />
-                        <h3 class="tips__card-header">Have a first aid kit for yourself →</h3>
-                        <p class="tips__card-desc">
-                            Many who give useful advice to mothers of newborns rightly note that
-                            mothers should not forget about their own health and comfort. Because a
-                            young mother needs to have on hand.
-                        </p>
+                    <div class="tips__cards">
+                        <article class="tips__card">
+                            <img
+                                src="./assets/images/tips/tips-upron.png"
+                                alt="First aid kit illustration"
+                                class="tips__card-image"
+                            />
+                            <h3 class="tips__card-header">
+                                Have a first aid kit for yourself
+                                <img
+                                    src="./assets/images/icons/arrow-right-icon.svg"
+                                    alt="Arrow right"
+                                    class="tips__card-header-icon"
+                                />
+                            </h3>
+                            <p class="tips__card-desc">
+                                Many who give useful advice to mothers of newborns rightly note that
+                                mothers should not forget about their own health and comfort.
+                                Because a young mother needs to have on hand.
+                            </p>
+                        </article>
+
+                        <article class="tips__card">
+                            <img
+                                src="./assets/images/tips/tips-pregnant.png"
+                                alt="First aid kit illustration"
+                                class="tips__card-image"
+                            />
+                            <h3 class="tips__card-header">
+                                Have a first aid kit for yourself
+                                <img
+                                    src="./assets/images/icons/arrow-right-icon.svg"
+                                    alt="Arrow right"
+                                    class="tips__card-header-icon"
+                                />
+                            </h3>
+                            <p class="tips__card-desc">
+                                Many who give useful advice to mothers of newborns rightly note that
+                                mothers should not forget about their own health and comfort.
+                                Because a young mother needs to have on hand.
+                            </p>
+                        </article>
+
+                        <article class="tips__card">
+                            <img
+                                src="./assets/images/tips/tips-mother.png"
+                                alt="First aid kit illustration"
+                                class="tips__card-image"
+                            />
+                            <h3 class="tips__card-header">
+                                Have a first aid kit for yourself
+                                <img
+                                    src="./assets/images/icons/arrow-right-icon.svg"
+                                    alt="Arrow right"
+                                    class="tips__card-header-icon"
+                                />
+                            </h3>
+                            <p class="tips__card-desc">
+                                Many who give useful advice to mothers of newborns rightly note that
+                                mothers should not forget about their own health and comfort.
+                                Because a young mother needs to have on hand.
+                            </p>
+                        </article>
+
+                        <article class="tips__card">
+                            <img
+                                src="./assets/images/tips/tips-baby-stoller.png"
+                                alt="First aid kit illustration"
+                                class="tips__card-image"
+                            />
+                            <h3 class="tips__card-header">
+                                Have a first aid kit for yourself
+                                <img
+                                    src="./assets/images/icons/arrow-right-icon.svg"
+                                    alt="Arrow right"
+                                    class="tips__card-header-icon"
+                                />
+                            </h3>
+                            <p class="tips__card-desc">
+                                Many who give useful advice to mothers of newborns rightly note that
+                                mothers should not forget about their own health and comfort.
+                                Because a young mother needs to have on hand.
+                            </p>
+                        </article>
+
+                        <article class="tips__card">
+                            <img
+                                src="./assets/images/tips/tips-house.png"
+                                alt="First aid kit illustration"
+                                class="tips__card-image"
+                            />
+                            <h3 class="tips__card-header">
+                                Have a first aid kit for yourself
+                                <img
+                                    src="./assets/images/icons/arrow-right-icon.svg"
+                                    alt="Arrow right"
+                                    class="tips__card-header-icon"
+                                />
+                            </h3>
+                            <p class="tips__card-desc">
+                                Many who give useful advice to mothers of newborns rightly note that
+                                mothers should not forget about their own health and comfort.
+                                Because a young mother needs to have on hand.
+                            </p>
+                        </article>
+
+                        <article class="tips__card">
+                            <img
+                                src="./assets/images/tips/tips-letter.png"
+                                alt="First aid kit illustration"
+                                class="tips__card-image"
+                            />
+                            <h3 class="tips__card-header">
+                                Have a first aid kit for yourself
+                                <img
+                                    src="./assets/images/icons/arrow-right-icon.svg"
+                                    alt="Arrow right"
+                                    class="tips__card-header-icon"
+                                />
+                            </h3>
+                            <p class="tips__card-desc">
+                                Many who give useful advice to mothers of newborns rightly note that
+                                mothers should not forget about their own health and comfort.
+                                Because a young mother needs to have on hand.
+                            </p>
+                        </article>
                     </div>
-                </div>
 
-                <button class="tips__show-all">All tips</button>
+                    <button class="tips__show-all">All tips</button>
+                </div>
             </section>
 
             <section class="stories">
-                <h2 class="stories__header">Stories</h2>
+                <div class="stories__container container">
+                    <h2 class="stories__header">Stories</h2>
 
-                <div class="stories__cards">
-                    <div class="stories__card">
-                        <img
-                            src="#"
-                            alt="Иллюстрация аптечки для мамы"
-                            class="stories__card-image"
-                        />
-                        <h3 class="stories__card-header">Have a first aid kit for yourself →</h3>
-                        <p class="stories__card-desc">...</p>
+                    <div class="stories__cards">
+                        <article class="stories__card">
+                            <img
+                                src="./assets/images/stories/stories1.png"
+                                alt="Mother's first aid kit illustration"
+                                class="stories__card-image"
+                            />
+                            <h3 class="stories__card-header">
+                                Have a first aid kit for yourself
+                                <img
+                                    src="./assets/images/icons/arrow-right-icon.svg"
+                                    alt="Arrow right"
+                                    class="stories__card-header-icon"
+                                />
+                            </h3>
+                            <p class="stories__card-desc">...</p>
+                        </article>
+
+                        <article class="stories__card">
+                            <img
+                                src="./assets/images/stories/storied2.png"
+                                alt="Mother's first aid kit illustration"
+                                class="stories__card-image"
+                            />
+                            <h3 class="stories__card-header">
+                                Have a first aid kit for yourself
+                                <img
+                                    src="./assets/images/icons/arrow-right-icon.svg"
+                                    alt="Arrow right"
+                                    class="stories__card-header-icon"
+                                />
+                            </h3>
+                            <p class="stories__card-desc">...</p>
+                        </article>
+
+                        <article class="stories__card">
+                            <img
+                                src="./assets/images/stories/stories3.png"
+                                alt="Mother's first aid kit illustration"
+                                class="stories__card-image"
+                            />
+                            <h3 class="stories__card-header">
+                                Have a first aid kit for yourself
+                                <img
+                                    src="./assets/images/icons/arrow-right-icon.svg"
+                                    alt="Arrow right"
+                                    class="stories__card-header-icon"
+                                />
+                            </h3>
+                            <p class="stories__card-desc">...</p>
+                        </article>
                     </div>
 
-                    <div class="stories__card">
-                        <img
-                            src="#"
-                            alt="Иллюстрация аптечки для мамы"
-                            class="stories__card-image"
-                        />
-                        <h3 class="stories__card-header">Have a first aid kit for yourself →</h3>
-                        <p class="stories__card-desc">...</p>
-                    </div>
-
-                    <div class="stories__card">
-                        <img
-                            src="#"
-                            alt="Иллюстрация аптечки для мамы"
-                            class="stories__card-image"
-                        />
-                        <h3 class="stories__card-header">Have a first aid kit for yourself →</h3>
-                        <p class="stories__card-desc">...</p>
-                    </div>
+                    <button class="stories__show-all">Show all stories</button>
                 </div>
-
-                <button class="stories__show-all">Show all stories</button>
             </section>
         </main>
+
+        <footer class="page-footer">
+            <div class="page-footer__container container">
+                <h2 class="page-footer__header">Get in touch</h2>
+
+                <div class="page-footer__contact-zone">
+                    <form class="page-footer__contact-form contact-form">
+                        <h3 class="contact-form__header">Send a message</h3>
+                        <h4 class="contact-form__subheader">Specifications</h4>
+                        <div class="contact-form__inputs">
+                            <div class="contact-form__row">
+                                <input
+                                    type="text"
+                                    class="contact-form__input contact-form__input--name"
+                                    placeholder="Name"
+                                />
+                                <input
+                                    type="email"
+                                    class="contact-form__input contact-form__input--email"
+                                    placeholder="Email Address"
+                                />
+                            </div>
+
+                            <div class="contact-form__row">
+                                <input
+                                    type="text"
+                                    class="contact-form__input contact-form__input--city"
+                                    placeholder="City"
+                                />
+                                <input
+                                    type="tel"
+                                    class="contact-form__input contact-form__input--phone"
+                                    placeholder="Phone number"
+                                />
+                            </div>
+
+                            <textarea
+                                name="message"
+                                id="message"
+                                class="contact-form__textarea"
+                                placeholder="Message"
+                            ></textarea>
+
+                            <button type="submit" class="contact-form__button">
+                                Show all products
+                            </button>
+                        </div>
+                    </form>
+
+                    <div class="page-footer__contacts contacts">
+                        <div class="contacts__item">
+                            <h3 class="contacts__header">Call Us</h3>
+                            <p class="contacts__desc">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the.
+                            </p>
+                            <a href="tel:+48943943854" class="contacts__link">(48) 943-943-854</a>
+                        </div>
+
+                        <!-- +2 -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-footer__map">
+                <iframe
+                    class="page-footer__map-frame"
+                    src="https://www.google.com/maps/embed?pb=..."
+                    width="600"
+                    height="400"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                >
+                </iframe>
+            </div>
+
+            <div class="page-footer__info-zone">
+                <div class="page-footer__info-container container">
+                    <h2 class="page-footer__info-title">Get in touch</h2>
+                    <div class="page-footer__nav-columns">
+                        <div class="page-footer__info-column page-footer__info-column--contacts">
+                            <h4 class="page-footer__column-header">Contacts</h4>
+                            <div class="page-footer__info-block">
+                                <h4 class="page-footer__block-header">Address:</h4>
+                                <p class="page-footer__block-desc"></p>
+                            </div>
+
+                            <div class="page-footer__info-block">
+                                <h4 class="page-footer__block-header">Contact:</h4>
+                                <p class="page-footer__block-desc"></p>
+                            </div>
+                        </div>
+
+                        <div class="page-footer__info-column page-footer__info-column--links">
+                            <h4 class="page-footer__column-header">What we do</h4>
+                            <ul class="page-footer__nav">
+                                <li class="page-footer__nav-item">
+                                    <a class="page-footer__nav-link" href="#"></a>
+                                </li>
+                                <li class="page-footer__nav-item">
+                                    <a class="page-footer__nav-link" href="#"></a>
+                                </li>
+                                <li class="page-footer__nav-item">
+                                    <a class="page-footer__nav-link" href="#"></a>
+                                </li>
+                                <li class="page-footer__nav-item">
+                                    <a class="page-footer__nav-link" href="#"></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="page-footer__info-column page-footer__info-column--socials">
+                            <h4 class="page-footer__column-header">What we do</h4>
+
+                            <div class="page-footer__socials">
+                                <a href="#" class="page-footer__social-link">
+                                    <img
+                                        src="./assets/images/icons/facebook-icon.svg"
+                                        alt="Facebook"
+                                        class="page-footer__social-icon"
+                                    />
+                                </a>
+
+                                <a href="#" class="page-footer__social-link">
+                                    <img
+                                        src="./assets/images/icons/inst-icon.svg"
+                                        alt="Instagram"
+                                        class="page-footer__social-icon"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
