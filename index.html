@@ -3,27 +3,54 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="./reset.css" />
+
         <title>Mother_page</title>
     </head>
     <body>
         <header class="page-header">
             <div class="page-header__container container">
-                <ul class="page-header__menu menu">
-                    <li class="menu__item"><a href="#" class="menu__link">Page</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">Products</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">Specifications</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">Statistics</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">Contact us</a></li>
-                </ul>
+                <div class="page-header__top">
+                    <nav class="page-header__menu">
+                        <ul class="page-header__menu-list menu">
+                            <li class="menu-list__item">
+                                <a href="#" class="menu-list__link">Page</a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a href="#" class="menu-list__link">Products</a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a href="#" class="menu-list__link">Specifications</a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a href="#" class="menu-list__link">Statistics</a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a href="#" class="menu-list__link">Contact us</a>
+                            </li>
+                        </ul>
+                    </nav>
 
-                <div class="page-header__actions">
-                    <button class="page-header__search">Search</button>
-                    <button class="page-header__contact-us">Contact-us</button>
+                    <div class="page-header__actions">
+                        <button class="page-header__search">Search</button>
+                        <button class="page-header__contact-us">Contact-us</button>
+                    </div>
                 </div>
 
                 <div class="page-header__hero">
-                    <h1><span>Explore the magic</span><br />of motherhood</h1>
-                    <a href="#" class="page-header__explore">
+                    <h1 class="page-header__header">
+                        <span class="page-header__span">Explore the magic</span><br />of motherhood
+                    </h1>
+                    <a href="#intro" class="page-header__explore">
                         <img
                             src="./assets/images/icons/explore-icon.svg"
                             alt="Explore icon"
@@ -36,7 +63,7 @@
 
         <main class="page-main">
             <section class="intro">
-                <div class="intro__container container">
+                <div class="intro__container container" id="intro">
                     <div class="intro__text-block">
                         <h2 class="intro__header">Motherhood</h2>
                         <p class="intro__paragraph">
@@ -56,17 +83,16 @@
                     </div>
 
                     <img
-                        src="./assets/images/motherhood-image.png"
+                        src="./assets/images/motherhood/motherhood-image.png"
                         alt="Motherhood image"
                         class="intro__image"
                     />
+                    <img
+                        src="./assets/images/motherhood/motherhood-bg-image.svg"
+                        alt="Motherhood background image"
+                        class="intro__bg-image"
+                    />
                 </div>
-
-                <img
-                    src="./assets/images/motherhood-bg-image.svg"
-                    alt="Motherhood background image"
-                    class="intro__bg-image"
-                />
             </section>
 
             <section class="tips-for-mom">
@@ -74,7 +100,7 @@
                     <h2 class="tips-for-mom__header">Tips for mom</h2>
 
                     <div class="tips-for-mom__category-grid category-grid category-grid--primary">
-                        <article class="category-grid__card category-card">
+                        <article class="category-grid__card category-card-1">
                             <img
                                 src="./assets/images/tips-for-mom/tips-for-mom1.png"
                                 alt="Mother with child, Analytics category"
@@ -87,7 +113,7 @@
                             <p class="category-card__info">5 products</p>
                         </article>
 
-                        <article class="category-grid__card category-card">
+                        <article class="category-grid__card category-card-2">
                             <img
                                 src="./assets/images/tips-for-mom/tips-for-mom2.png"
                                 alt="Mother with child, Analytics category"
@@ -96,11 +122,11 @@
                                 width="300"
                                 height="200"
                             />
-                            <h3 class="category-card__header">Analytics</h3>
-                            <p class="category-card__info">5 products</p>
+                            <h3 class="category-card__header">Print</h3>
+                            <p class="category-card__info">2 products</p>
                         </article>
 
-                        <article class="category-grid__card category-card">
+                        <article class="category-grid__card category-card-3">
                             <img
                                 src="./assets/images/tips-for-mom/tips-for-mom3.png"
                                 alt="Mother with child, Analytics category"
@@ -109,13 +135,13 @@
                                 width="300"
                                 height="200"
                             />
-                            <h3 class="category-card__header">Analytics</h3>
-                            <p class="category-card__info">5 products</p>
+                            <h3 class="category-card__header">Creative Studio</h3>
+                            <p class="category-card__info">11 products</p>
                         </article>
                     </div>
 
                     <div class="tips-for-mom__category-grid category-grid category-grid--secondary">
-                        <article class="category-grid__card category-card">
+                        <article class="category-grid__card category-card-4">
                             <img
                                 src="./assets/images/tips-for-mom/tips-for-mom4.png"
                                 alt="Woman with children outdoors, Digital category"
@@ -124,11 +150,11 @@
                                 width="300"
                                 height="200"
                             />
-                            <h3 class="category-card__header">Digital</h3>
-                            <p class="category-card__info">2 products</p>
+                            <h3 class="category-card__header">Influencer marketing</h3>
+                            <p class="category-card__info">5 products</p>
                         </article>
 
-                        <article class="category-grid__card category-card">
+                        <article class="category-grid__card category-card-5">
                             <img
                                 src="./assets/images/tips-for-mom/tips-for-mom5.png"
                                 alt="Woman with children outdoors, Digital category"
@@ -141,7 +167,7 @@
                             <p class="category-card__info">2 products</p>
                         </article>
 
-                        <article class="category-grid__card category-card">
+                        <article class="category-grid__card category-card-6">
                             <img
                                 src="./assets/images/tips-for-mom/tips-for-mom6.png"
                                 alt="Woman with children outdoors, Digital category"
@@ -150,8 +176,8 @@
                                 width="300"
                                 height="200"
                             />
-                            <h3 class="category-card__header">Digital</h3>
-                            <p class="category-card__info">2 products</p>
+                            <h3 class="category-card__header">Event</h3>
+                            <p class="category-card__info">1 products</p>
                         </article>
                     </div>
 
@@ -300,55 +326,47 @@
                     <h2 class="stories__header">Stories</h2>
 
                     <div class="stories__cards">
-                        <article class="stories__card">
+                        <article class="stories__card stories__card-1">
                             <img
                                 src="./assets/images/stories/stories1.png"
                                 alt="Mother's first aid kit illustration"
                                 class="stories__card-image"
                             />
-                            <h3 class="stories__card-header">
-                                Have a first aid kit for yourself
-                                <img
-                                    src="./assets/images/icons/arrow-right-icon.svg"
-                                    alt="Arrow right"
-                                    class="stories__card-header-icon"
-                                />
-                            </h3>
-                            <p class="stories__card-desc">...</p>
+                            <h3 class="stories__card-header">Have a first aid kit for yourself</h3>
+                            <p class="stories__card-desc">
+                                Many who give useful advice to mothers of newborns rightly note that
+                                mothers should many who give useful advice to mothers of newborns
+                                rightly note that mothers should not forget not forget...
+                                <a href="#" class="stories__card-more-link">Read more</a>
+                            </p>
                         </article>
 
-                        <article class="stories__card">
+                        <article class="stories__card stories__card-2">
                             <img
                                 src="./assets/images/stories/storied2.png"
                                 alt="Mother's first aid kit illustration"
                                 class="stories__card-image"
                             />
-                            <h3 class="stories__card-header">
-                                Have a first aid kit for yourself
-                                <img
-                                    src="./assets/images/icons/arrow-right-icon.svg"
-                                    alt="Arrow right"
-                                    class="stories__card-header-icon"
-                                />
-                            </h3>
-                            <p class="stories__card-desc">...</p>
+                            <h3 class="stories__card-header">Have a first aid kit for yourself</h3>
+                            <p class="stories__card-desc">
+                                Many who give useful advice to mothers of newborns rightly note that
+                                mothers should not forget...
+                                <a href="#" class="stories__card-more-link">Read more</a>
+                            </p>
                         </article>
 
-                        <article class="stories__card">
+                        <article class="stories__card stories__card-3">
                             <img
                                 src="./assets/images/stories/stories3.png"
                                 alt="Mother's first aid kit illustration"
                                 class="stories__card-image"
                             />
-                            <h3 class="stories__card-header">
-                                Have a first aid kit for yourself
-                                <img
-                                    src="./assets/images/icons/arrow-right-icon.svg"
-                                    alt="Arrow right"
-                                    class="stories__card-header-icon"
-                                />
-                            </h3>
-                            <p class="stories__card-desc">...</p>
+                            <h3 class="stories__card-header">Have a first aid kit for yourself</h3>
+                            <p class="stories__card-desc">
+                                Many who give useful advice to mothers of newborns rightly note that
+                                mothers should not forget...
+                                <a href="#" class="stories__card-more-link">Read more</a>
+                            </p>
                         </article>
                     </div>
 
@@ -415,78 +433,100 @@
                             <a href="tel:+48943943854" class="contacts__link">(48) 943-943-854</a>
                         </div>
 
-                        <!-- +2 -->
+                        <div class="contacts__item">
+                            <h3 class="contacts__header">Visit Us</h3>
+                            <p class="contacts__desc">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the.
+                            </p>
+                            <a href="tel:+48943943854" class="contacts__link">Address</a>
+                        </div>
+
+                        <div class="contacts__item">
+                            <h3 class="contacts__header">Live chat</h3>
+                            <p class="contacts__desc">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the.
+                            </p>
+                            <a href="tel:+48943943854" class="contacts__link">Live chat</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="page-footer__map">
-                <iframe
-                    class="page-footer__map-frame"
-                    src="https://www.google.com/maps/embed?pb=..."
-                    width="600"
-                    height="400"
-                    style="border: 0"
-                    allowfullscreen=""
-                    loading="lazy"
-                >
-                </iframe>
-            </div>
+                <div class="page-footer__map">
+                    <iframe
+                        class="page-footer__map-frame"
+                        src="https://www.google.com/maps/embed?pb=..."
+                        width="600"
+                        height="400"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                    >
+                    </iframe>
+                </div>
 
-            <div class="page-footer__info-zone">
-                <div class="page-footer__info-container container">
-                    <h2 class="page-footer__info-title">Get in touch</h2>
-                    <div class="page-footer__nav-columns">
-                        <div class="page-footer__info-column page-footer__info-column--contacts">
-                            <h4 class="page-footer__column-header">Contacts</h4>
-                            <div class="page-footer__info-block">
-                                <h4 class="page-footer__block-header">Address:</h4>
-                                <p class="page-footer__block-desc"></p>
+                <div class="page-footer__info-zone">
+                    <div class="page-footer__info-container container">
+                        <h2 class="page-footer__info-title">Get in touch</h2>
+                        <div class="page-footer__nav-columns">
+                            <div
+                                class="page-footer__info-column page-footer__info-column--contacts"
+                            >
+                                <h4 class="page-footer__column-header">Contacts</h4>
+                                <div class="page-footer__info-block">
+                                    <h4 class="page-footer__block-header">Address:</h4>
+                                    <p class="page-footer__block-desc">W 28th St, Chicago</p>
+                                </div>
+
+                                <div class="page-footer__info-block">
+                                    <h4 class="page-footer__block-header">Contact:</h4>
+                                    <p class="page-footer__block-desc">kontakt@name.com.pl</p>
+                                </div>
                             </div>
 
-                            <div class="page-footer__info-block">
-                                <h4 class="page-footer__block-header">Contact:</h4>
-                                <p class="page-footer__block-desc"></p>
+                            <div class="page-footer__info-column page-footer__info-column--links">
+                                <h4 class="page-footer__column-header">What we do</h4>
+                                <nav class="page-footer__nav">
+                                    <ul class="page-footer__menu-list">
+                                        <li class="page-footer__nav-item">
+                                            <a class="page-footer__nav-link" href="#">About us</a>
+                                        </li>
+                                        <li class="page-footer__nav-item">
+                                            <a class="page-footer__nav-link" href="#"
+                                                >Our realizacje</a
+                                            >
+                                        </li>
+                                        <li class="page-footer__nav-item">
+                                            <a class="page-footer__nav-link" href="#">FAQ</a>
+                                        </li>
+                                        <li class="page-footer__nav-item">
+                                            <a class="page-footer__nav-link" href="#">Contact</a>
+                                        </li>
+                                    </ul>
+                                </nav>
                             </div>
-                        </div>
 
-                        <div class="page-footer__info-column page-footer__info-column--links">
-                            <h4 class="page-footer__column-header">What we do</h4>
-                            <ul class="page-footer__nav">
-                                <li class="page-footer__nav-item">
-                                    <a class="page-footer__nav-link" href="#"></a>
-                                </li>
-                                <li class="page-footer__nav-item">
-                                    <a class="page-footer__nav-link" href="#"></a>
-                                </li>
-                                <li class="page-footer__nav-item">
-                                    <a class="page-footer__nav-link" href="#"></a>
-                                </li>
-                                <li class="page-footer__nav-item">
-                                    <a class="page-footer__nav-link" href="#"></a>
-                                </li>
-                            </ul>
-                        </div>
+                            <div class="page-footer__info-column page-footer__info-column--socials">
+                                <h4 class="page-footer__column-header">Get in touch</h4>
 
-                        <div class="page-footer__info-column page-footer__info-column--socials">
-                            <h4 class="page-footer__column-header">What we do</h4>
+                                <div class="page-footer__socials">
+                                    <a href="#" class="page-footer__social-link">
+                                        <img
+                                            src="./assets/images/icons/facebook-icon.svg"
+                                            alt="Facebook"
+                                            class="page-footer__social-icon"
+                                        />
+                                    </a>
 
-                            <div class="page-footer__socials">
-                                <a href="#" class="page-footer__social-link">
-                                    <img
-                                        src="./assets/images/icons/facebook-icon.svg"
-                                        alt="Facebook"
-                                        class="page-footer__social-icon"
-                                    />
-                                </a>
-
-                                <a href="#" class="page-footer__social-link">
-                                    <img
-                                        src="./assets/images/icons/inst-icon.svg"
-                                        alt="Instagram"
-                                        class="page-footer__social-icon"
-                                    />
-                                </a>
+                                    <a href="#" class="page-footer__social-link">
+                                        <img
+                                            src="./assets/images/icons/inst-icon.svg"
+                                            alt="Instagram"
+                                            class="page-footer__social-icon"
+                                        />
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
