@@ -40,10 +40,16 @@
                         </ul>
                     </nav>
 
-                    <div class="page-header__actions">
-                        <button class="page-header__search">Search</button>
-                        <button class="page-header__contact-us">Contact-us</button>
-                    </div>
+                    <button class="page-header__burger">
+                        <span class="burger__item"></span>
+                        <span class="burger__item"></span>
+                        <span class="burger__item"></span>
+                    </button>
+                </div>
+
+                <div class="page-header__actions">
+                    <button class="page-header__search">Search</button>
+                    <button class="page-header__contact-us">Contact-us</button>
                 </div>
 
                 <div class="page-header__hero">
@@ -60,7 +66,6 @@
                 </div>
             </div>
         </header>
-
         <main class="page-main">
             <section class="intro">
                 <div class="intro__container container" id="intro">
@@ -533,5 +538,35 @@
                 </div>
             </div>
         </footer>
+
+        <script>
+            const burger = document.querySelector('.page-header__burger');
+            const menu = document.querySelector('.page-header__menu');
+            const actions = document.querySelector('.page-header__actions');
+            const headerTop = document.querySelector('.page-header__top');
+
+            function moveActions() {
+                if (window.innerWidth <= 768 && menu && actions) {
+                    if (!menu.contains(actions)) {
+                        menu.appendChild(actions);
+                    }
+                } else if (window.innerWidth > 768 && actions && headerTop) {
+                    if (!headerTop.contains(actions)) {
+                        headerTop.insertBefore(
+                            actions,
+                            headerTop.querySelector('.page-header__burger')
+                        );
+                    }
+                }
+            }
+
+            burger?.addEventListener('click', () => {
+                menu.classList.toggle('is-open');
+            });
+
+            moveActions();
+
+            window.addEventListener('resize', moveActions);
+        </script>
     </body>
 </html>

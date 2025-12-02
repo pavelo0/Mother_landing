@@ -9,8 +9,6 @@ html {
     box-sizing: inherit;
 }
 
-body {
-}
 .container {
     max-width: 1167px;
     padding: 0 20px;
@@ -20,6 +18,7 @@ body {
     background-image: url(./assets/images/header-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 100vh;
 }
 .page-header__container,
@@ -29,6 +28,7 @@ body {
 .page-header__container {
     max-width: 1390px;
     height: 100%;
+    position: relative;
 }
 .page-header__top {
     width: 100%;
@@ -65,10 +65,11 @@ body {
     color: #cdcdcd;
 }
 .page-header__actions {
-    justify-self: end;
-}
-.page-header__actions {
-    grid-column: 3;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    display: flex;
+    align-items: center;
 }
 .page-header__search {
     background-color: transparent;
@@ -103,6 +104,20 @@ body {
 }
 .page-header__contact-us:hover {
     background-color: #cdcdcd;
+}
+.page-header__burger {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.burger__item {
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 2px;
 }
 
 .page-header__hero {
@@ -140,8 +155,6 @@ body {
     scale: 1.1;
 }
 
-.intro {
-}
 .intro__container {
     margin: 80px auto;
     display: flex;
@@ -150,8 +163,7 @@ body {
     gap: 120px;
     position: relative;
 }
-.intro__text-block {
-}
+
 .intro__header {
     font-weight: 600;
     font-size: 32px;
@@ -186,10 +198,10 @@ body {
 }
 .intro__bg-image {
     position: absolute;
-    z-index: 111;
     bottom: 12.5px;
     z-index: -1;
     opacity: 0.5;
+    max-width: 90%;
 }
 
 .tips-for-mom__header {
@@ -460,8 +472,7 @@ body {
 .page-footer {
     background-color: #7f3e41;
 }
-.page-footer__container {
-}
+
 .page-footer__header {
     font-family: 'Inter';
     font-size: 32px;
@@ -643,8 +654,6 @@ body {
     letter-spacing: -1%;
     line-height: 160%;
 }
-.page-footer__info-column--links {
-}
 .page-footer__menu-list {
     display: flex;
     flex-direction: column;
@@ -674,4 +683,396 @@ body {
 }
 .page-footer__social-icon:hover {
     scale: 1.1;
+}
+
+@media (max-width: 1200px) {
+    .page-header__container {
+        max-width: 100%;
+        padding: 0 32px;
+    }
+
+    .page-header__top {
+        padding: 20px 0;
+    }
+
+    .page-header__actions {
+        display: none;
+    }
+
+    .page-header__menu-list {
+        gap: 24px;
+    }
+
+    .menu-list__item {
+        font-size: 15px;
+    }
+
+    .page-header__search {
+        font-size: 15px;
+        margin-right: 24px;
+    }
+
+    .page-header__contact-us {
+        font-size: 13px;
+        padding: 10px 20px;
+    }
+
+    .page-header__header {
+        font-size: 64px;
+        bottom: 140px;
+    }
+
+    .page-header__span {
+        font-size: 64px;
+    }
+
+    .intro__container {
+        gap: 60px;
+        margin: 60px auto;
+    }
+
+    .intro__image {
+        max-width: 380px;
+        max-height: 480px;
+    }
+
+    .category-grid--primary,
+    .category-grid--secondary {
+        height: 600px;
+    }
+
+    .stories__cards {
+        height: 600px;
+    }
+
+    .page-header__burger {
+        display: flex;
+        width: fit-content;
+    }
+
+    .page-header__menu {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        padding: 80px 32px 32px;
+        gap: 24px;
+        background: rgba(127, 62, 65, 0.97);
+        backdrop-filter: blur(10px);
+        transition: right 0.3s ease;
+        z-index: 999;
+    }
+
+    .page-header__menu.is-open {
+        right: 0;
+    }
+
+    .page-header__menu-list {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .page-header__menu .page-header__actions {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 24px;
+        width: 100%;
+    }
+
+    .page-header__menu .page-header__search {
+        color: #fff;
+        text-align: left;
+        padding: 12px 0;
+    }
+
+    .page-header__menu .page-header__contact-us {
+        width: 100%;
+        text-align: center;
+    }
+
+    .page-header__top .page-header__actions {
+        display: none;
+    }
+
+    .page-header__top {
+        grid-template-columns: 1fr auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header__container {
+        padding: 0 24px;
+    }
+
+    .page-header__actions {
+        right: 24px;
+        top: 20px;
+    }
+
+    .page-header__header {
+        font-size: 48px;
+        bottom: 160px;
+        left: 0;
+        width: 100%;
+        padding: 0 24px;
+    }
+
+    .page-header__span {
+        font-size: 48px;
+    }
+
+    .page-header__hero {
+        height: calc(100vh - 70px);
+    }
+
+    .intro__container {
+        flex-direction: column;
+        gap: 40px;
+        margin: 60px auto;
+    }
+
+    .intro__header {
+        font-size: 28px;
+    }
+
+    .intro__paragraph {
+        font-size: 15px;
+    }
+
+    .intro__image {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+
+    .intro__bg-image {
+        display: none;
+    }
+
+    .tips-for-mom__header {
+        font-size: 28px;
+        margin-top: 60px;
+        margin-bottom: 32px;
+    }
+
+    .category-grid--primary,
+    .category-grid--secondary {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        height: auto;
+        gap: 16px;
+        margin-top: 24px;
+    }
+
+    .category-card-1,
+    .category-card-2,
+    .category-card-3,
+    .category-card-4,
+    .category-card-5,
+    .category-card-6 {
+        grid-row: auto;
+        grid-column: auto;
+    }
+
+    .category-card__photo {
+        height: 240px;
+    }
+
+    .tips-for-mom__show-all {
+        margin: 32px 0;
+        padding: 14px 20px;
+        font-size: 14px;
+    }
+
+    .tips__header {
+        font-size: 28px;
+        padding-top: 60px;
+        margin-bottom: 32px;
+    }
+
+    .tips__cards {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .tips__card {
+        width: 100%;
+        flex: 1;
+    }
+
+    .tips__show-all {
+        margin-top: 32px;
+        margin-bottom: 60px;
+        padding: 14px 20px;
+        font-size: 14px;
+    }
+
+    .stories__header {
+        font-size: 28px;
+        padding-top: 60px;
+        padding-bottom: 32px;
+    }
+
+    .stories__cards {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        height: auto;
+        gap: 16px;
+    }
+
+    .stories__card-1,
+    .stories__card-2,
+    .stories__card-3 {
+        grid-row: auto;
+        grid-column: auto;
+    }
+
+    .stories__card-image {
+        height: 240px;
+    }
+
+    .stories__card-header {
+        font-size: 16px;
+        margin-top: 16px;
+    }
+
+    .stories__card-desc {
+        font-size: 14px;
+        margin-top: 16px;
+    }
+
+    .stories__show-all {
+        margin-top: 32px;
+        margin-bottom: 60px;
+        padding: 14px 20px;
+        font-size: 14px;
+    }
+
+    .page-footer__header {
+        font-size: 28px;
+        padding-top: 60px;
+    }
+
+    .page-footer__contact-zone {
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 32px;
+    }
+
+    .contact-form {
+        border-right: none;
+        border-bottom: 1px solid #fff;
+        padding-right: 0;
+        padding-bottom: 40px;
+    }
+
+    .contact-form__header {
+        font-size: 20px;
+    }
+
+    .contact-form__row {
+        flex-direction: column;
+        gap: 24px;
+        margin-top: 24px;
+    }
+
+    .contact-form__textarea {
+        margin-top: 24px;
+    }
+
+    .contact-form__button {
+        margin-top: 32px;
+        font-size: 14px;
+        padding: 14px 20px;
+    }
+
+    .contacts__header {
+        font-size: 20px;
+    }
+
+    .contacts__desc {
+        font-size: 14px;
+    }
+
+    .page-footer__map {
+        padding: 60px 0;
+    }
+
+    .page-footer__map-frame {
+        min-height: 320px;
+    }
+
+    .page-footer__info-container {
+        flex-direction: column;
+        gap: 32px;
+        padding: 48px 0;
+    }
+
+    .page-footer__info-title {
+        font-size: 28px;
+    }
+
+    .page-footer__nav-columns {
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-header__container {
+        padding: 0 16px;
+    }
+
+    .page-header__actions {
+        right: 16px;
+        top: 16px;
+    }
+
+    .page-header__top {
+        padding: 16px 0;
+    }
+
+    .page-header__menu {
+        width: 100%;
+        right: -100%;
+    }
+
+    .page-header__header {
+        font-size: 32px;
+        bottom: 150px;
+        padding: 0 16px;
+    }
+
+    .page-header__span {
+        font-size: 32px;
+    }
+
+    .page-header__hero {
+        height: calc(100vh - 60px);
+    }
+
+    .page-header__explore {
+        bottom: 50px;
+    }
+
+    .intro__container {
+        margin: 40px auto;
+    }
+
+    .intro__header {
+        font-size: 24px;
+    }
+
+    .tips-for-mom__header,
+    .tips__header,
+    .stories__header,
+    .page-footer__header,
+    .page-footer__info-title {
+        font-size: 24px;
+    }
 }
